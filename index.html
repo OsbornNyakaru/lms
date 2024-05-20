@@ -5,26 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Management App</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Learning Management App</h1>
-    <form id="register-form">
-        <h2>Register</h2>
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="full_name" placeholder="Full Name" required>
-        <button type="submit">Register</button>
-    </form>
-    <form id="login-form">
-        <h2>Login</h2>
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-    </form>
-    <form id="logout-form">
-        <button type="submit">Logout</button>
-    </form>
+     <header class="header">
+        <nav class="navbar">
+            <i class='bx bx-exclude bx-tada' style='color:#fffefe'  ></i>
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search course...">
+            <button type="submit">
+                <!-- search icon link to be pasted here -->
+            </button>
+        </form>
+
+        <!-- Cart Icon -->
+        <i class='bx bxs-shopping-bag bx-tada' style='color:#fffefe' id="cart-icon" data-quantity="0"></i>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content"></div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <button type="button" class="btn-buy">Pay Now</button>
+            <i class='bx bx-x' id="close-cart" ></i>
+    </header>
+    
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h1 class="logo">
+                <!-- Paste link for icon logo -->
+            <i class='bx bx-exclude bx-tada' style='color:#fffefe'  ></i>                
+                Nia
+            </h1>
+            <div class="text-sci">
+                <h2>Welcome! <br><span> To our learning management system</span></h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos deleniti minima aperiam dolorum eum sed eveniet excepturi odio labore. Officia quis, obcaecati eos totam consequuntur commodi unde iusto voluptatibus!</p>
+
+                <div class="social-icons">
+                    <a href="www.linkedln.com" class="linkeln" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="www.twitch.com" class="twitch" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a>
+                    <a href="www.instagram.com" class="insta" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="www.reddit.com" class="reddit" target="_blank"><ion-icon name="logo-reddit"></ion-icon></a>
+                    <a href="www.twitter.com" class="twitter" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Sign In</h2>
+
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        
+                        <label for=""><input type="checkbox">Remember Me</label>
+                                              
+                    </div>
+
+                    <button type="submit"class="btn">Sign In</button>
+
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+
+                </form>
+            </div>
+            <div class="form-box register">
+                <form action="#">
+                    <h2>Sign Up</h2>
+
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label for=""><input type="checkbox">I accept the terms and conditions</label> 
+                                               
+                    </div>
+
+                    <button type="submit"class="btn">Sign Up</button>
+
+                    <div class="login-register">
+                        <p>Already have an account?  <a href="#" class="login-link">Sign In</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

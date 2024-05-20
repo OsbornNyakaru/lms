@@ -205,3 +205,15 @@ function displayFullName(fullName) {
     // Set the inner HTML of the element to the user's full name
     fullNameElement.textContent = fullName;
 }
+
+const logregBox = document.querySelector('.logreg-box');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+
+registerLink.addEventListener('click', () =>{
+    logregBox.classList.add('active');
+});
+
+loginLink.addEventListener('click', () =>{
+    logregBox.classList.remove('active');
+});
